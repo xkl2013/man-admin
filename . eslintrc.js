@@ -1,4 +1,4 @@
-{
+module.exports={
   extends: 'react-app',
   rules: {
     camelcase: [0],
