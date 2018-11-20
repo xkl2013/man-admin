@@ -25,10 +25,10 @@
     "eject": "react-scripts eject",
     "precommit": "npm run lint-staged",
     "lint:style": "stylelint \"src/**/*.less\" --syntax less",
-    "lint": "eslint --ext .js src mock tests && npm run lint:style",
-    "lint:fix": "eslint --fix --ext .js src mock tests && npm run lint:style",
+    "lint": "eslint --ext .js src/ && npm run lint:style",
+    "lint:fix": "eslint --fix --ext .js src/ && npm run lint:style",
     "lint-staged": "lint-staged",
-    "lint-staged:js": "eslint --ext .js"
+    "lint-staged:js": "eslint --ext .js src/"
   },
   "eslintConfig": {
     "extends": "react-app"
