@@ -1,8 +1,16 @@
-module.exports={
-  extends: 'react-app',
+module.exports = {
+  parser: 'babel-eslint',
+  extends: ['airbnb', 'prettier'],
+  env: {
+    browser: true,
+    node: true,
+    es6: true,
+    mocha: true,
+    jest: true,
+    jasmine: true,
+  },
   rules: {
     camelcase: [0],
-    'no-unused-vars':[0],
     'generator-star-spacing': [0],
     'consistent-return': [0],
     'react/forbid-prop-types': [0],
@@ -52,5 +60,13 @@ module.exports={
     'function-paren-newline': [0],
     'no-restricted-globals': [0],
     'require-yield': [1],
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+    },
+  },
+  settings: {
+    polyfills: ['fetch', 'promises'],
   },
 };
